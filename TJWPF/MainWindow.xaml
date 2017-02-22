@@ -1,0 +1,129 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Custom="http://schemas.microsoft.com/winfx/2006/xaml/presentation/ribbon" x:Class="TJWPF.MainWindow"
+        Title="车底违禁物品检测系统" Height="768" Width="1024">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition  />
+            <ColumnDefinition Width="216" />
+            <ColumnDefinition Width="84" />
+        </Grid.ColumnDefinitions>
+
+        <ToolBarTray  Grid.ColumnSpan="3">
+            <ToolBar Band="1" BandIndex="1"  >
+                <Button Margin="5,0,0,0">
+                    <Button.Content>
+                        <StackPanel Orientation="Vertical" Width="70">
+                            <Image Width="48" Height="48" Source="/image/set.png"></Image>
+                            <TextBlock Text="设置" TextAlignment="Center"></TextBlock>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+                <Button Margin="5,0,0,0">
+                    <Button.Content>
+                        <StackPanel Orientation="Vertical" Width="70">
+                            <Image Width="48" Height="48" Source="/image/fill.png"></Image>
+                            <TextBlock Text="填充" TextAlignment="Center"></TextBlock>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+                <Button Margin="5,0,0,0">
+                    <Button.Content>
+                        <StackPanel Orientation="Vertical" Width="70">
+                            <Image Width="48" Height="48" Source="/image/fangdajing.png"></Image>
+                            <TextBlock Text="放大镜" TextAlignment="Center"></TextBlock>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+                <Button Margin="5,0,0,0">
+                    <Button.Content>
+                        <StackPanel Orientation="Vertical" Width="70">
+                            <Image Width="48" Height="48" Source="/image/car.png"></Image>
+                            <TextBlock Text="数据检索" TextAlignment="Center"></TextBlock>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+                <Button Margin="5,0,0,0">
+                    <Button.Content>
+                        <StackPanel Orientation="Vertical" Width="70">
+                            <Image Width="48" Height="48" Source="/image/blackwhite.png"></Image>
+                            <TextBlock Text="黑白名单" TextAlignment="Center"></TextBlock>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+                <Button Margin="5,0,0,0">
+                    <Button.Content>
+                        <StackPanel Orientation="Vertical" Width="70">
+                            <Image Width="48" Height="48" Source="/image/editimage.png"></Image>
+                            <TextBlock Text="编辑图像" TextAlignment="Center"></TextBlock>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+                <Button Margin="5,0,0,0">
+                    <Button.Content>
+                        <StackPanel Orientation="Vertical" Width="70">
+                            <Image Width="48" Height="48" Source="/image/printer.png"></Image>
+                            <TextBlock Text="打印" TextAlignment="Center"></TextBlock>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+                <Button Margin="5,0,0,0">
+                    <Button.Content>
+                        <StackPanel Orientation="Vertical" Width="70">
+                            <Image Width="48" Height="48" Source="/image/help.png"></Image>
+                            <TextBlock Text="帮助" TextAlignment="Center"></TextBlock>
+                        </StackPanel>
+                    </Button.Content>
+                </Button> 
+                
+            </ToolBar> 
+        </ToolBarTray>
+        <Image Grid.Column="1" Grid.ColumnSpan="2"  Source="/image/logo.png" Height="70" Width="300" />
+        <ToolBarTray Orientation="Vertical" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2">
+            <ToolBar Band="2" BandIndex="2">
+                <Button Margin="0,5,0,0">
+                    <Button.Content>
+                        <StackPanel Orientation="Vertical" Width="70" Height="70">
+                            <Image Width="48" Height="48" Source="/image/start.png"></Image>
+                            <TextBlock Text="开始扫描(F3)" TextAlignment="Center"></TextBlock>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>               
+                <Button Margin="0,5,0,0">
+                    <Button.Content>
+                        <StackPanel Orientation="Vertical" Width="70" Height="70">
+                            <Image Width="48" Height="48" Source="/image/stop.png"></Image>
+                            <TextBlock Text="停止扫描(F4)" TextAlignment="Center"></TextBlock>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+                <Button Margin="0,5,0,0">
+                    <Button.Content>
+                        <StackPanel Orientation="Vertical" Width="70" Height="70">
+                            <Image Width="48" Height="48" Source="/image/save.png"></Image>
+                            <TextBlock Text="保存结果" TextAlignment="Center"></TextBlock>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+                <Button Margin="0,5,0,0">
+                    <Button.Content>
+                        <StackPanel Orientation="Vertical" Width="70" Height="70">
+                            <Image Width="48" Height="48" Source="/image/camera.png"></Image>
+                            <TextBlock Text="设置" TextAlignment="Center"></TextBlock>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+            </ToolBar>
+        </ToolBarTray>
+        <StackPanel Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="2">
+            <Image />
+        </StackPanel>
+        
+    </Grid>
+</Window>
